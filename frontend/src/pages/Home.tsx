@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "../components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -13,14 +14,18 @@ export default function Home() {
         </p>
       </div>
       <div className="group flex flex-col gap-2 justify-center items-center">
-        <Button className="w-fit" onClick={() => window.location.href = "/dashboard"}>
-            Get Started
-            <ArrowRight className="size-4 ml-1.5 opacity-80"/>
-        </Button>
-        <Button variant="ghost" className="text-blue-500 hover:text-blue-400" onClick={() => window.location.href = "/about"}>
-            Learn more about us
-            <ArrowUpRight className="size-4 ml-1.5 opacity-70" />
-        </Button>
+        <Link to="/dashboard">
+          <Button className="w-fit">
+              Get Started
+              <ArrowRight className="size-4 ml-1.5 opacity-80"/>
+          </Button>
+        </Link>
+        <Link to="/about">
+          <Button variant="ghost" className="text-blue-500 hover:text-blue-400">
+              Learn more about us
+              <ArrowUpRight className="size-4 ml-1.5 opacity-70" />
+          </Button>
+        </Link>
       </div>
     </div>
   );

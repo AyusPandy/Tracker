@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Button } from "../components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function Services() {
   return (
@@ -12,7 +13,7 @@ export default function Services() {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {[1, 2, 3].map((i) => (
           <div key={i} className="group relative rounded-xl bg-accent/70 p-6 shadow-xl transition-all hover:bg-accent hover:-translate-y-1 hover:shadow-xl">
-            <div className="size-10 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+            <div className="size-10 rounded-lg bg-primary/5 flex items-center justify-center mb-6">
               <span className="text-muted-foreground font-medium">{i}</span>
             </div>
             <h3 className="text-xl font-bold mb-2 text-foreground">Service Element {i}</h3>
@@ -24,14 +25,18 @@ export default function Services() {
       </div>
 
       <div className="flex items-center justify-center pt-10">
-        <Button onClick={() => window.location.href="/dashboard"}>
-          Go to dashboard
-          <ArrowUpRight className="size-4 ml-1.5 opacity-60" />
-        </Button>
-        <Button variant="ghost" onClick={() => window.location.href="/"}>
+        <Link to="/dashboard">
+          <Button>
+            Go to dashboard
+            <ArrowUpRight className="size-4 ml-1.5 opacity-60" />
+          </Button>
+        </Link>
+        <Link to="/">
+          <Button variant="ghost">
           Go to home
           <ArrowRight className="size-4 ml-1.5 opacity-50" />
         </Button>
+        </Link>
       </div>
     </div>
   );

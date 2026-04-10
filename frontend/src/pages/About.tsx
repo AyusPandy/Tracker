@@ -1,5 +1,6 @@
 import { ArrowUpRight } from "lucide-react";
 import { Button } from "../components/ui/button";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -12,10 +13,12 @@ export default function About() {
         <p className="text-lg text-muted-foreground leading-relaxed">
           Our core philosophy orbits around simplicity, elegance, and raw performance. No fluff, just results.
         </p>
+        <Link to="/services">
         <Button variant="ghost" className="text-blue-500 p-0 hover:text-blue-400 hover:bg-transparent h-fit">
             Learn more
             <ArrowUpRight className="size-4 opacity-70 ml-1.5" />
         </Button>
+        </Link>
       </div>
     </div>
   );

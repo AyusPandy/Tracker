@@ -1,26 +1,26 @@
 {
   "pageViews": {
-    "/": 38,
-    "/dashboard": 29,
-    "/contact": 16,
-    "/services": 16,
-    "/about": 17,
+    "/": 42,
+    "/dashboard": 30,
+    "/contact": 17,
+    "/services": 17,
+    "/about": 18,
     "/home": 1
   },
   "timeSpent": {
-    "/": 325,
-    "/dashboard": 393,
+    "/": 349,
+    "/dashboard": 394,
     "/contact": 223,
     "/services": 22,
     "/about": 178,
     "/home": 7
   },
   "navigationFlow": {
-    "/ -> /dashboard": 5,
-    "/dashboard -> /contact": 5,
-    "/contact -> /services": 4,
-    "/services -> /about": 3,
-    "/about -> /": 6,
+    "/ -> /dashboard": 7,
+    "/dashboard -> /contact": 6,
+    "/contact -> /services": 5,
+    "/services -> /about": 4,
+    "/about -> /": 7,
     "/services -> /": 2,
     "/dashboard -> /": 12,
     "/ -> /about": 11,
@@ -37,7 +37,8 @@
     "direct": 20,
     "http://localhost:5173/dashboard": 30,
     "http://localhost:5173/": 63,
-    "http://localhost:5173/services": 4
+    "http://localhost:5173/services": 4,
+    "https://tracker-git-main-binarybeams-projects.vercel.app/": 8
   },
   "contacts": [
     {

@@ -1,0 +1,49 @@
+{
+  "pageViews": {
+    "/": 33,
+    "/dashboard": 22,
+    "/contact": 12,
+    "/services": 12,
+    "/about": 14,
+    "/home": 1
+  },
+  "timeSpent": {
+    "/": 318,
+    "/dashboard": 185,
+    "/contact": 209,
+    "/services": 9,
+    "/about": 172,
+    "/home": 7
+  },
+  "navigationFlow": {
+    "/ -> /dashboard": 4,
+    "/dashboard -> /contact": 4,
+    "/contact -> /services": 3,
+    "/services -> /about": 2,
+    "/about -> /": 5,
+    "/services -> /": 2,
+    "/dashboard -> /": 10,
+    "/ -> /about": 9,
+    "/about -> /services": 7,
+    "/services -> /contact": 6,
+    "/contact -> /dashboard": 8,
+    "/about -> /contact": 1,
+    "/dashboard -> /about": 1,
+    "/home -> /services": 1,
+    "/dashboard -> /services": 1
+  },
+  "entrySources": {
+    "direct": 19,
+    "http://localhost:5173/dashboard": 28,
+    "http://localhost:5173/": 43,
+    "http://localhost:5173/services": 4
+  },
+  "contacts": [
+    {
+      "name": "jnvnkfsv",
+      "email": "pandeayus@gmail.com",
+      "message": "nksfbvs",
+      "date": "2026-04-10T09:16:49.153Z"
+    }
+  ]
+}
